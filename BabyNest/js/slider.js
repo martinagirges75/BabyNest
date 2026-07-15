@@ -2,17 +2,10 @@
 // BabyNest Slider
 // ======================================
 
-// Hero Images
-
 const heroImages = [
 
     "images/hero.jpg",
 
-    "images/hero2.jpg",
-
-    "images/hero3.jpg",
-
-    "images/hero4.jpg"
 
 ];
 
@@ -42,10 +35,10 @@ function changeHeroImage() {
 
 }
 
-// تغيير الصورة كل 4 ثواني
+if (heroImage) {
 
-setInterval(changeHeroImage, 4000);
+    heroImage.style.transition = "0.5s";
 
-// تأثير انتقال ناعم
+    setInterval(changeHeroImage, 4000);
 
-heroImage.style.transition = "0.5s";
+}
