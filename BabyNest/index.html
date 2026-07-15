@@ -19,18 +19,16 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- CSS Files -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="stylesheet" href="css/responsive.css">
-
     <link rel="stylesheet" href="css/animations.css">
 
 </head>
 
 <body>
 
-    <!-- ================= Loader ================= -->
+    <!-- Loader -->
 
     <div id="loader">
 
@@ -38,7 +36,7 @@
 
     </div>
 
-    <!-- ================= Header ================= -->
+    <!-- Header -->
 
     <header>
 
@@ -64,13 +62,37 @@
 
                 <li><a href="#contact">Contact</a></li>
 
+                <li>
+
+                    <a href="login.html" class="login-btn">
+
+                        Login
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="register.html" class="register-btn">
+
+                        Register
+
+                    </a>
+
+                </li>
+
             </ul>
 
             <div class="icons">
 
                 <i class="fa-solid fa-magnifying-glass"></i>
 
-                <i class="fa-regular fa-heart"></i>
+                <a href="login.html">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </a>
 
                 <div class="cart">
 
@@ -88,7 +110,7 @@
 
     </header>
 
-    <!-- ================= Hero Section ================= -->
+    <!-- Hero -->
 
     <section class="hero">
 
@@ -99,12 +121,16 @@
                 <h1>Everything Your Baby Needs</h1>
 
                 <p>
+
                     Discover premium baby products designed with love, comfort and safety.
+
                 </p>
 
                 <a href="#products" class="btn">
-                Shop Now
-            </a>
+
+                    Shop Now
+
+                </a>
 
             </div>
 
@@ -117,7 +143,8 @@
         </div>
 
     </section>
-    <!-- ================= About Section ================= -->
+
+    <!-- About -->
 
     <section id="about" class="about">
 
@@ -134,20 +161,23 @@
                 <h2>About BabyNest</h2>
 
                 <p>
-                    BabyNest offers premium quality products for newborns and toddlers.
+
+                    BabyNest offers premium quality products for newborns and toddlers. We provide safe, comfortable and trusted baby products with modern designs.
+
                 </p>
 
                 <a href="#products" class="btn">
-                Explore
-            </a>
+
+                    Explore Products
+
+                </a>
 
             </div>
 
         </div>
 
     </section>
-
-    <!-- ================= Categories Section ================= -->
+    <!-- ================= Categories ================= -->
 
     <section id="categories" class="categories">
 
@@ -199,8 +229,37 @@
 
     </section>
 
+    <!-- ================= Search ================= -->
 
-    <!-- ================= Products Section ================= -->
+    <section class="search-section">
+
+        <div class="container">
+
+            <div class="search-container">
+
+                <select id="searchType">
+
+                    <option value="name">Search by Product Name</option>
+
+                    <option value="price">Search by Price</option>
+
+                </select>
+
+                <input type="text" id="searchInput" placeholder="Search products...">
+
+                <button id="searchBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Products ================= -->
 
     <section id="products" class="products">
 
@@ -220,14 +279,13 @@
 
             <div id="products-grid" class="products-grid">
 
-                <!-- المنتجات هتظهر هنا بواسطة JavaScript -->
-
             </div>
 
         </div>
 
     </section>
-    <!-- ================= Reviews Section ================= -->
+
+    <!-- ================= Reviews ================= -->
 
     <section id="reviews" class="reviews">
 
@@ -249,7 +307,11 @@
 
                     </p>
 
-                    <h4>— Sarah Ahmed</h4>
+                    <h4>
+
+                        — Sarah Ahmed
+
+                    </h4>
 
                 </div>
 
@@ -261,7 +323,11 @@
 
                     </p>
 
-                    <h4>— Michael John</h4>
+                    <h4>
+
+                        — Michael John
+
+                    </h4>
 
                 </div>
 
@@ -273,7 +339,11 @@
 
                     </p>
 
-                    <h4>— Emma Wilson</h4>
+                    <h4>
+
+                        — Emma Wilson
+
+                    </h4>
 
                 </div>
 
@@ -282,24 +352,16 @@
         </div>
 
     </section>
-
-
     <!-- ================= Newsletter ================= -->
 
     <section class="newsletter">
 
         <div class="container">
 
-            <h2>
-
-                Subscribe To Our Newsletter
-
-            </h2>
+            <h2>Subscribe To Our Newsletter</h2>
 
             <p>
-
                 Get exclusive offers and the latest baby products delivered directly to your inbox.
-
             </p>
 
             <form>
@@ -317,7 +379,6 @@
         </div>
 
     </section>
-
 
     <!-- ================= Contact ================= -->
 
@@ -337,9 +398,7 @@
 
                 <input type="email" placeholder="Your Email" required>
 
-                <textarea placeholder="Write your message..." required>
-
-                </textarea>
+                <textarea placeholder="Write your message..." required></textarea>
 
                 <button type="submit">
 
@@ -352,7 +411,6 @@
         </div>
 
     </section>
-
 
     <!-- ================= Footer ================= -->
 
@@ -368,7 +426,7 @@
 
             <p>
 
-                Your trusted baby care store for premium products, comfort, and happiness.
+                Your trusted baby care store for premium products, comfort and happiness.
 
             </p>
 
@@ -382,7 +440,7 @@
 
     </footer>
 
-    <!-- ================= Shopping Cart Sidebar ================= -->
+    <!-- ================= Shopping Cart ================= -->
 
     <div class="cart-sidebar" id="cartSidebar">
 
@@ -397,7 +455,9 @@
         <div id="cartItems">
 
             <p class="empty-cart">
+
                 Your cart is empty.
+
             </p>
 
         </div>
@@ -405,21 +465,33 @@
         <div class="cart-footer">
 
             <h3>
-                Total:
-                <span id="cartTotal">$0</span>
+
+                Total :
+
+                <span id="cartTotal">
+
+                    $0
+
+                </span>
+
             </h3>
+
             <button id="clearCart" class="btn">
-    Clear Cart
-</button>
+
+                Clear Cart
+
+            </button>
+
             <button class="btn checkout-btn">
 
-            Checkout
+                Checkout
 
-        </button>
+            </button>
 
         </div>
 
     </div>
+
     <!-- ================= Back To Top ================= -->
 
     <button id="topBtn">
@@ -428,8 +500,7 @@
 
     </button>
 
-
-    <!-- ================= JavaScript Files ================= -->
+    <!-- ================= JavaScript ================= -->
 
     <script src="js/products.js"></script>
 
